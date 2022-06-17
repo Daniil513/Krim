@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крым</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Shippori+Antique+B1&display=swap'); */
+        body {
+            margin: 0;
+        }
+
+        header {
+            box-sizing: border-box;
+            width: 100vw;
+            background-color: rgb(0, 183, 255);
+            padding: 40px;
+        }
+
+        main {
+            box-sizing: border-box;
+            width: 100vw;
+            background-image: url(krym-lastochkino-gnezdo.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            height: 800px;
+            display: flex;
+        }
+
+        main h1 {
+            padding: 200px;
+            background-color: rgba(253, 253, 253, 0.7);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 70px;
+            color: deepskyblue;
+            width: fit-content;
+            height: auto;
+            margin: auto;
+        }
+
+        section {
+            box-sizing: border-box;
+            width: 100vw;
+            background-color: rgb(59 73 118);
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+
+        }
+
+        section img,
+        section iframe {
+            width: 40%;
+        }
+
+        section p {
+            width: 40%;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgba(0, 205, 178, 0.452);
+            padding: 40px;
+            border-radius: 5px;
+        }
+
+        .Картинка1 {
+            width: calc(50vw);
+            height: 70vh;
+            margin: 0;
+            padding: 0;
+            transition: all 3s;
+        }
+
+        .Картинка2 {
+            width: calc(25vw);
+            height: 35vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Дост {
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .img4 {
+            width: 50vw;
+            outline: 0px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .img4 img {
+            display: block;
+
+        }
+
+        .h41 {
+            width: calc(50vw - 17px);
+            height: 70vh;
+            display: none;
+            background-color: rgba(0, 243, 231, 0.301);
+            position: absolute;
+            font-size: 2vw;
+            color: blue;
+            padding: 20px;
+            box-sizing: border-box;
+            line-height: 150%;
+            padding-top: 15vh;
+            transition: all 3s;
+        }
+
+        .Картинка1:hover~.h41 {
+            display: block;
+            transition: all 1s;
+        }
+
+        .h41:hover {
+            display: block;
+            cursor: pointer;
+            transition: all 1s;
+        }
+
+        .Свет {}
+
+        .верткартинка {
+            width: 20vw;
+            height: 70vh;
+            overflow: hidden;
+            position: relative;
+            margin-top: 50px;
+
+        }
+
+        .верткартинка img {
+            position: absolute;
+            left: -530px;
+        }
+
+        .Дост_2 {
+            position: relative;
+            position: absolute;
+            left: 0px;
+            width: 150vw;
+            border: 0px solid black;
+            box-sizing: border-box;
+            /* width:100vw ;
+            min-width: 100vw; */
+            padding: 60px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(84, 106, 177);
+        }
+
+        .верткартинка_2 {
+            width: 20vw;
+            height: 70vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .верткартинка_2 img {
+            position: absolute;
+            left: -250px;
+            height: 70vh;
+        }
+
+        .верткартинка_3 {
+            width: 20vw;
+            height: 70vh;
+            overflow: hidden;
+            position: relative;
+            margin-top: 70px;
+        }
+
+        .верткартинка_3 img {
+            position: absolute;
+            left: -320px;
+            height: 70vh;
+        }
+
+        .верткартинка_4 {
+            width: 20vw;
+            height: 70vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .верткартинка_4 img {
+            position: absolute;
+            left: -320px;
+            height: 70vh;
+        }
+
+        .верткартинка_5 img {
+            position: absolute;
+            left: -390px;
+            height: 70vh;
+        }
+
+        .верткартинка_5 {
+            width: 20vw;
+            height: 70vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .Дост_2 img {
+            filter: brightness(50%);
+            transition: all 1s;
+        }
+
+        .Дост_2 img:hover {
+            filter: brightness(1);
+        }
+
+        .Дост_2 p {
+            position: absolute;
+            z-index: 1;
+            padding: 20px;
+            line-height: 200%;
+            top: 0%;
+            margin: 0%;
+            font-size: 18px;
+            font-family: 'Arial', Arial, sans-serif;
+            line-height: 1.6;
+            font-weight: 400;
+            color: #8edaae;
+            transition: all 1.2s;
+        }
+
+        .Дост_2 p:hover~img {
+            filter: brightness(1);
+        }
+
+        .Дост_2 p:hover {
+            opacity: 0;
+
+        }
+
+        header img {
+            width: 40px;
+            vertical-align: middle;
+
+        }
+
+        header a {
+            font-family: 'PT Sans Narrow', sans-serif;
+            font-family: 'Shippori Antique B1', sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+            color: blueviolet;
+            font-size: 30px;
+            vertical-align: middle;
+        }
+
+        header ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .slider img {
+            width: 50vw;
+        }
+
+        .slider {
+            overflow: hidden;
+            outline: 3px solid green;
+            width: 50vw;
+            margin: 0 auto;
+        }
+
+        .slider_block {
+            overflow: hidden;
+            width: 100vw;
+            background: rgb(75, 158, 154);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slider .imgs {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            /* outline: 10px solid black; */
+            width: 150vw;
+            animation-name: slid;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes slid {
+            from {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-50vw);
+            }
+
+            50% {
+                transform: translateX(-100vw);
+            }
+
+            75% {
+                transform: translateX(-50vw);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .longblock {
+            position: relative;
+            width: 100vw;
+            height: 90vh;
+            overflow-x: scroll;
+            overflow: hidden;
+            /* display:flex;     */
+        }
+
+        .frame {
+            /* width: 100vw;
+             overflow: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#Дом"><img src="sea-waves-variant_icon-icons.com_70395.png" alt=""> Информация о Крыме</a></li>
+            <li><a href="#дом2"><img src="42462mountain_99130.png" alt=""> Достопремичательности</a></li>
+            <li><a href="#дом3"><img src="3691814-building-federal-landmark-palace-switzerland_108098.png" alt="">
+                    Достопремичательности в Ялте</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Информация о Крыме</h1>
+    </main>
+    <section id="Дом">
+        <p>Привет это интересная информация о крыме.
+            Крым входит в состав России, занимает Крымский полуостров. Крым омывается Черным и Азовским морями,
+            с материком соединяется Перекопским перешейком. Площадь полуострова - 27,0 тыс.
+            кв. км. Максимальное расстояние с севера на юг - 205 км, с запада на восток - 325 км.
+            Население на 1 января 1998 года - 2555 тыс. чел.</p>
+        <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac1498c03113dc1dd077776217437032b71974b0930171de37c261226d1ebb29b&amp;source=constructor"
+            frameborder="0"></iframe>
+    </section>
+    <section>
+        <img src="2019-04-12_20-49-17_450500_lg.jpg" alt="">
+        <p>
+            это небольшое внутреннее море Мирового океана,
+            которое соединено с водами Атлантики через длинную цепочку проливов и морей.
+            Водоем омывает берега сразу семи государств: России, Украины, Абхазии, Румынии, Болгарии, Грузии и Турции.
+            Его общая площадь – чуть больше 400 тысяч квадратных километров, а длина береговой линии немного меньше 3
+            500 километров.
+        </p>
+    </section>
+    <div class="Дост" id="дом2">
+        <img src="349d59e7e68f9e12c774cb1d1124df58.jpg" alt="" class="Картинка1">
+        <h4 class="Картинка1 h41">Замок стоит на 40-метровой отвесной
+            Аврориной скале на мысе Ай-Тодор. Подойти к
+            «Ласточкиному гнезду» можно только пешком,
+            спускаясь от трассы по длинной
+            оборудованной тропинке на 1200 ступенек.</h4>
+        <div class="img4">
+            <img src="5869786.jpg" alt="" class="Картинка2">
+            <div class="Свет"></div>
+            <img src="vorontsov-palace.jpg" alt="" class="Картинка2">
+            <img src="CdsEiK8XIAAzR9i.jpg" alt="" class="Картинка2">
+            <img src="227b86f25bdd4972b1ce29e29c5a6d65.max-1200x800.jpg" alt="Картинка2" class="Картинка2">
+        </div>
+    </div>
+    <div class="frame">
+        <div class="longblock" onwheel="buf(event)">
+            <div class="Дост_2" id="дом3">
+                <div class="верткартинка"><img src="scale_1200.jpg" alt="">
+                    <p>полис, основанный
+                        древними греками
+                        на Гераклейском
+                        полуострове на
+                        юго-западном
+                        побережье Крыма.</p><img src="scale_1200.jpg" alt="">
+                </div>
+                <div class="верткартинка_2">
+                    <p>Херсонес Таврический — это древний греческий полис, основанный во
+                        второй половине V столетия до н. э. Уникальность его заключается в
+                        том, что даже после упадка Греческой цивилизации Херсонес оставался
+                        единственным жилым античным городом: последние жители покинули его в XV веке.</p>
+                    <img src="scale_1200 (1).jpg" alt="">
+                </div>
+                <div class="верткартинка_3">
+                    <p>Один из крымских водопадов, который мы рекомендуем посетить — это Джур-Джур,
+                        считающийся самым полноводным на полуострове. Поток воды настолько мощный,
+                        что водопад не иссякает даже в самые жаркие летние дни. Высота Джур-Джура
+                        составляет 15 метров, а вот исток находится на высоте 468 м.</p>
+                    <img src="scale_1200 (2).jpg" alt="">
+                </div>
+                <div class="верткартинка_4">
+                    <p>Ещё один памятник, напоминающий о временах правлениях генуэцев — это крепость
+                        Чембало, расположенная на Крепостной горе.
+                        Первые укрепления появились здесь в середине XIV века и неоднократно становились
+                        предметом территориальных споров, обычно оканчивавшихся битвой.</p>
+                    <img src="scale_1200 (3).jpg" alt="">
+                </div>
+
+                <div class="верткартинка_5">
+                    <p>Никитский ботанический сад, ставший первым подобным
+                        учреждением на юге Российской империи,
+                        был основан по указу Александра I в начале XIX века.
+                        С течением времени территория сада увеличивалась,
+                        высаживались новые виды растений и велась научная работа. </p>
+                    <img src="scale_12000.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="slider_block">
+        <div class="slider">
+            <div class="imgs">
+                <img src="30b24061549a8a2707ffe39c489f546c.jpg" alt="">
+                <img src="vid_sverhu.jpg" alt="">
+                <img src="sasyk.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Creative Commons Licence (by-nc-nd). See worditout.com for details -->
+<div style='width:auto;height:auto;'><!-- You may use this wrapping div to restrict the height or width -->
+    <script type='text/javascript' src='https://worditout.com/word-cloud/5092080/embed.js'></script>
+    <noscript>
+      <p style='text-align:center;font-size:xx-small;overflow:auto;height:100%;'><a href='https://worditout.com/word-cloud/5092080' title='Click to go to this word cloud on WordItOut.com'>&quot;Крым&quot;</a><br />
+      Click on the link above to see this word cloud at <a href='https://worditout.com' title='Transform your text into word clouds!'>WordItOut</a>. You may also view it on this website if you enable JavaScript (see your web browser settings).</p>
+    </noscript>
+  </div>
+  <p style="display:none ;"><a href='https://worditout.com/word-cloud/5092080' title='See &quot;Крым&quot; on WordItOut.com'>Word cloud made with WordItOut</a></p>
+    <script>
+        let runleft = 1
+        let runright = -1
+
+        function buf(event) {
+            event.preventDefault()
+            // w50 = screen.availWidth / 2 - Math.floor(screen.availWidth / 50)
+            let block = document.querySelector(".Дост_2")
+            // runleft += 1
+            if (event.deltaY > 0) {
+                runleft += 1
+                console.log(getComputedStyle(block, null).left)
+                if (parseInt(getComputedStyle(block, null).left) >= 0) {
+                    console.log("бинго +", event.deltaY)
+                    runleft -= 1
+                }
+                block.style.left = runleft + "vw"
+            }
+            // console.log(event.deltaY)
+            if (event.deltaY < 0) {
+                runleft -= 1
+                // console.log(getComputedStyle(block, null).left, getComputedStyle(block, null).right)
+                //runright -= 10
+                if (parseInt(getComputedStyle(block, null).right) >= 0) {
+                    // console.log("бинго -", w50)
+                    runleft += 1
+                }
+                block.style.left = runleft + "vw"
+            }
+        }
+    </script>
+</body>
+
+</html>
